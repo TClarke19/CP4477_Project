@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP4477 ML Prediction Project</title>
+</head>
+<body>
+    <h1>MPG Prediction</h1>
+    <form method="POST">
+        {{ mpg_form.hidden_tag() }}
+        <p>{{ mpg_form.make.label }}: {{ mpg_form.make() }}</p>
+        <p>{{ mpg_form.model.label }}: {{ mpg_form.model() }}</p>
+        <p>{{ mpg_form.submit() }}</p>
+    </form>
+    <br>
+    <h1>Diabetic Prediction</h1>
+    <form method="POST">
+        {{ diabetes_form }}
+        <p>Form fields will go here</p>
+        <p>{{ diabetes_form.submit() }}</p>
+    </form>
+</body>
+</html>
