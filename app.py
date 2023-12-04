@@ -2,7 +2,12 @@ from flask import Flask, request, render_template
 from flask_wtf import FlaskForm
 from wtforms import SubmitField, FloatField, StringField
 from wtforms.validators import DataRequired
+from wtforms import StringField
+from joblib import load
 import numpy as np
+
+mpg_model = load()
+diabetes_model = load()
 
 class MpgForm(FlaskForm):
     make = StringField('Make', validators=[DataRequired()])
