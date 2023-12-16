@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CP4477 ML Prediction Project</title>
+    </head>
+    <body>
+        <h1>MPG Prediction</h1>
+            <form method="POST">
+                <p>{{ mpg_form.cylinders.label }}: {{ mpg_form.cylinders() }} Enter your number of cylinders as a whole number (ex: 8)</p>
+                <p>{{ mpg_form.displacement.label }}: {{ mpg_form.displacement() }} Enter your engine's displacement as a floating point number (ex: 350.00)</p>
+                <p>{{ mpg_form.horsepower.label }}: {{ mpg_form.horsepower() }} Enter your engine's horsepower as a floating point number (ex: 165.00)</p>
+                <p>{{ mpg_form.weight.label }}: {{ mpg_form.weight() }} Enter your vehichle's weight as a whole number (ex: 2050)</p>
+                <p>{{ mpg_form.age.label }}: {{ mpg_form.age() }} Enter your vehichles age in years as a whole number (ex: 10)</p>
+                <p>{{ mpg_form.origin_japan.label }}: {{ mpg_form.origin_japan() }} Enter 1 if your vehicle was made in Japan, otherwise enter 0</p>
+                <p>{{ mpg_form.origin_usa.label }}: {{ mpg_form.origin_usa() }} Enter 1 if your vehicle was made in the USA, other wise enter 0</p>
+                <p>{{ mpg_form.submit() }}</p>
+            </form>
+        <br>
+            <h1>Diabetic Prediction</h1>
+                <form method="POST">
+                    <p>{{ diabetes_form.pregnancies.label }}: {{ diabetes_form.pregnancies() }} Enter the number of previous pregnancies experiences as a whole number (ex: 5)</p>
+                    <p>{{ diabetes_form.BloodPressure.label }}: {{ diabetes_form.BloodPressure() }} Enter the blood pressure as a whole number (ex: 72)</p>
+                    <p>{{ diabetes_form.Insulin.label }}: {{ diabetes_form.Insulin() }} Enter the 2-hour serum insulin level as a floating point number (ex: 155.344)</p>
+                    <p>{{ diabetes_form.BMI_Age.label }}: {{ diabetes_form.BMI_Age() }} Enter the BMI_Age as BMI multiplied by age as a floating point number (ex: 1680.0)</p>
+                    <p>{{ diabetes_form.DPF_Age.label }}: {{ diabetes_form.DPF_Age() }} Enter the DPF_Age as the Diabetes Prdegree Function multiplied by age as a floating point number (ex: 31.350)</p>
+                    <p>{{ diabetes_form.submit() }}</p>
+                </form>
+    </body>
+</html>
