@@ -60,6 +60,4 @@ def index():
     return render_template('index.html', mpg_form=mpg_form, diabetes_form=diabetes_form)
 
 if __name__ == '__main__':
-    db.create_all()
-    if 'liveconsole' not in gethostname():
-        app.run()
+    app.run(debug=False)
